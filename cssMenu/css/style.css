@@ -1,0 +1,81 @@
+body{
+	font-family: "PT Sans", Tahoma, Arial;
+	text-transform: uppercase;
+	background: url(../img/geometry2.png);
+}
+
+ul.nav{
+	list-style: none;
+	padding:0;
+	margin:30px;
+	opacity: 0.5;
+	transition: opacity .5s ease-in-out;
+}
+
+ul.nav:hover{
+	opacity: 1;
+}
+
+ul.nav li{
+	height: 50px;
+	width: 50px;
+	overflow: hidden;
+	border-radius: 4px;
+	transition: width .5s ease-in-out, height .5s ease-in-out .5s;
+}
+
+ul.nav li:hover{
+	height: 200px;
+	width: 200px;
+}
+
+ul.nav li a{
+	display: block;
+	width:200px;
+	height: 50px;
+	background:#bbb;
+	border-radius: 5px;
+	margin:1px;
+	line-height: 50px;
+	padding-left:20px;
+	text-decoration: none;
+	color: #fff;
+	position: relative;
+}
+ul.nav li a:hover{
+	background: #0f0;
+}
+
+ul.nav li a:first-child{
+	text-indent: 35px;
+}
+
+ul.nav li a:first-child:before{
+	content: '';
+	display: block;
+	width:32px;
+	height: 32px;
+	position:absolute;
+	top:8px;
+	left:9px;
+	opacity: 0.3;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+ul.nav li.item1 a:first-child:before{
+	background-image: url(../img/3D-Cube.png);
+}
+
+ul.nav li.item2 a:first-child:before{
+	background-image: url(../img/bluetooth.png);
+}
+
+ul.nav li.item4 a:first-child:before{
+	background-image: url(../img/connect.png);
+}
+
+
+ul.nav li.item3 a:first-child:before{
+	background-image: url(../img/facebook-alt.png);
+}
