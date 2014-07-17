@@ -15,9 +15,13 @@ body{
 	background:#fff;
 }
 
+.content-up{
+	margin:0 50px; 
+}
+
 .logo{
 	padding: 25px 0; 
-	margin:0 50px; 
+	
 	font-size: 30px; 
 	font-weight: bold; 
 	color: #5b5b5b;
@@ -26,7 +30,7 @@ body{
 
 .nav{
 	background: #393939;
-	margin:0 50px;
+	
 }
 nav{
 	float:left;
@@ -62,3 +66,79 @@ nav li a{
 	cursor:pointer;
 }
 .social li i:hover{opacity: .5;}
+
+.slider{
+	outline: 1px solid red;
+	height: 620px;
+}
+
+.slider header{
+	height:95px;
+	outline: 1px solid red;
+	margin-bottom: 0;
+	line-height: 95px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+	color:#5c5c5c;
+	text-shadow: 1px 1px 0px #aeaeae;
+}
+
+.slider .text{
+	height: 55px;
+	outline: 1px solid green;
+	margin-top:0;
+	line-height: 55px;
+	text-align: center;
+	font-size: 25px;
+	color:#5c5c5c;
+	text-shadow: 1px 1px 0px #aeaeae;
+}
+
+.slider .slide{
+	position:relative;
+	height:520px;
+	overflow: hidden;
+}
+
+.slider .slide>a{
+	position:absolute;
+	top:40%;
+	background-color: #ececec;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	display: block;
+	text-align: center;
+	line-height: 40px;
+	text-shadow: 0 0 1px #fff;
+}
+.slider .slide>a.right{
+	right:0%;
+}
+.slider .slide>a:hover{
+	background-color:#75cec2;
+	color:#fff;
+}
+
+.slider .position li{
+	border-radius: 50%;
+	height:15px;
+	width: 15px;
+	background-color:#ddd; 
+	cursor:pointer;
+	float:left;	
+	margin-right:5px;
+}
+
+.slider .position li.active{
+	background-color:#75cec2;
+}
+
+.slider ul.position {
+	padding:0;
+	bottom:70px;
+	left: 45%;
+	position:absolute;
+	list-style: none; 
+}
