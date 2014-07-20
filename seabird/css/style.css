@@ -67,14 +67,14 @@ nav li a{
 }
 .social li i:hover{opacity: .5;}
 
-.slider{
-	outline: 1px solid red;
+.slider-section{
+	
 	height: 620px;
 }
 
-.slider header{
+.slider-section header{
 	height:95px;
-	outline: 1px solid red;
+	
 	margin-bottom: 0;
 	line-height: 95px;
 	text-align: center;
@@ -84,9 +84,9 @@ nav li a{
 	text-shadow: 1px 1px 0px #aeaeae;
 }
 
-.slider .text{
+.slider-section .text{
 	height: 55px;
-	outline: 1px solid green;
+	
 	margin-top:0;
 	line-height: 55px;
 	text-align: center;
@@ -95,15 +95,16 @@ nav li a{
 	text-shadow: 1px 1px 0px #aeaeae;
 }
 
-.slider .slide{
+.slider-section .slider{
 	position:relative;
-	height:520px;
+	height:470px;
 	overflow: hidden;
+
 }
 
-.slider .slide>a{
+.slider-section .slider>a{
 	position:absolute;
-	top:40%;
+	top:30%;
 	background-color: #ececec;
 	height: 40px;
 	width: 40px;
@@ -113,32 +114,75 @@ nav li a{
 	line-height: 40px;
 	text-shadow: 0 0 1px #fff;
 }
-.slider .slide>a.right{
+.slider-section .slider>a.right{
 	right:0%;
 }
-.slider .slide>a:hover{
+.slider-section .slider>a:hover{
 	background-color:#75cec2;
 	color:#fff;
 }
 
-.slider .position li{
+.slider-section .position li{
 	border-radius: 50%;
 	height:15px;
 	width: 15px;
 	background-color:#ddd; 
-	cursor:pointer;
+	
 	float:left;	
 	margin-right:5px;
 }
 
-.slider .position li.active{
+.slider-section .position li.active{
 	background-color:#75cec2;
 }
 
-.slider ul.position {
+.slider-section ul.position {
 	padding:0;
-	bottom:70px;
+	bottom:10px;
 	left: 45%;
 	position:absolute;
 	list-style: none; 
+}
+
+.slidecontent{
+	position:relative;
+	height:470px;
+	perspective: 800px;
+	transform-style:preserve-3d;
+
+}
+
+.slidecontent .slide{
+	position:absolute;
+	background: #aaa;
+	height:365px;
+	width: 280px;
+	overflow: hidden;
+	box-shadow:10px 5px 10px rgba(0,0,0,.4);
+	top:5%;	
+	transition:all .5s ease-in-out;
+}
+
+.slidecontent .slide>img{
+	width: inherit;
+}
+
+.slide1{
+	display: block !important;
+	transform:rotateY(-15deg) translate3d(0px,0,-150px);
+}
+
+.slide2{
+	display: block !important;
+	transform:rotateY(-15deg) translate3d(250px,0,-50px);
+}
+
+.slide3{
+	display: block !important;
+	transform:rotateY(-15deg) translate3d(500px,0,-150px);
+}
+
+.hidden-slide{
+	display: block !important;
+	transform:rotateY(-15deg) translate3d(250px,0,-450px);
 }
