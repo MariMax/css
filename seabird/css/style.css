@@ -176,7 +176,7 @@ nav li a{
 .slide2{
 	display: block !important;
 	transform:rotateY(-15deg) translate3d(250px,0,-50px);
-	z-index: 2 !important;
+	z-index: 3 !important;
 }
 
 .slide3{
