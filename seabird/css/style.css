@@ -170,19 +170,23 @@ nav li a{
 .slide1{
 	display: block !important;
 	transform:rotateY(-15deg) translate3d(0px,0,-150px);
+	z-index: 2 !important;
 }
 
 .slide2{
 	display: block !important;
 	transform:rotateY(-15deg) translate3d(250px,0,-50px);
+	z-index: 2 !important;
 }
 
 .slide3{
 	display: block !important;
 	transform:rotateY(-15deg) translate3d(500px,0,-150px);
+	z-index: 2 !important;
 }
 
 .hidden-slide{
 	display: block !important;
 	transform:rotateY(-15deg) translate3d(250px,0,-450px);
+	
 }
