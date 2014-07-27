@@ -1,6 +1,9 @@
-*, *:after, *:before { border-box; box-sizing: border-box; }
-.clearfix:before, .clearfix:after { content: ''; display: table; }
-.clearfix:after { clear: both; }
+*,
+*:after,
+*:before{border-box;box-sizing: border-box;}
+.clearfix:before,
+.clearfix:after{content: '';display: table;}
+.clearfix:after{clear: both;}
 
 
 body{
@@ -9,158 +12,156 @@ body{
 }
 
 .content{
-	margin:50px auto;
+	background: #fff;
+	border: 1px solid #dbdbdb;
+	margin: 50px auto;
 	width: 1050px;
-	border:1px solid #dbdbdb;
-	background:#fff;
 }
 
 .content-up{
-	margin:0 50px; 
+	margin: 0 50px; 
 }
 
 .logo{
-	padding: 25px 0; 
-	
+	color: #5b5b5b;
 	font-size: 30px; 
 	font-weight: bold; 
-	color: #5b5b5b;
+	padding: 25px 0; 
 	text-shadow: 0 0 1px #5d5d5d;
 }
 
 .nav{
 	background: #393939;
-	
 }
 nav{
-	float:left;
+	float: left;
 	list-style: none;
 }
 nav li{
 	display: inline-block;
-	text-transform: uppercase;
 	font-size: 12px;
+	text-transform: uppercase;
 }
+
 nav li a{
-	display:block;
+	border-right: 1px solid #464646;
+	color: #fff;
+	display: block;
+	padding: 20px;
 	text-decoration: none; 
-	color:#fff;
-	padding:20px;
-	border-right:1px solid #464646;
 }
 
 .social{
-	margin:0;
-	float:right;list-style: none; 
-	padding-right:20px;
+	float:right; list-style: none; 
+	margin: 0;
+	padding-right: 20px;
 }
+
 .social li{
 	display: inline-block;
 }
+
 .social li i{
-	padding-top:20px;
-	padding-right:10px;
-	color:#fff;
-	opacity: .1;
+	color: #fff;
+	cursor: pointer;
 	font-size: 14px;
-	cursor:pointer;
+	opacity: .1;
+	padding-right: 10px;
+	padding-top: 20px;
 }
+
 .social li i:hover{opacity: .5;}
 
 .slider-section{
-	
 	height: 620px;
 }
 
 .slider-section header{
-	height:95px;
-	
-	margin-bottom: 0;
-	line-height: 95px;
-	text-align: center;
-	font-weight: bold;
+	color: #5c5c5c;
 	font-size: 30px;
-	color:#5c5c5c;
+	font-weight: bold;
+	height:95px;
+	line-height: 95px;
+	margin-bottom: 0;
+	text-align: center;
 	text-shadow: 1px 1px 0px #aeaeae;
 }
 
 .slider-section .text{
-	height: 55px;
-	
-	margin-top:0;
-	line-height: 55px;
-	text-align: center;
+	color: #5c5c5c;
 	font-size: 25px;
-	color:#5c5c5c;
+	height: 55px;
+	line-height: 55px;
+	margin-top: 0;
+	text-align: center;
 	text-shadow: 1px 1px 0px #aeaeae;
 }
 
 .slider-section .slider{
-	position:relative;
 	height:470px;
 	overflow: hidden;
-
+	position:relative;
 }
 
 .slider-section .slider>a{
-	position:absolute;
-	top:30%;
 	background-color: #ececec;
-	height: 40px;
-	width: 40px;
 	border-radius: 50%;
 	display: block;
-	text-align: center;
+	height: 40px;
 	line-height: 40px;
+	position: absolute;
+	text-align: center;
 	text-shadow: 0 0 1px #fff;
+	top: 30%;
+	width: 40px;
 }
+
 .slider-section .slider>a.right{
-	right:0%;
+	right: 0%;
 }
+
 .slider-section .slider>a:hover{
-	background-color:#75cec2;
-	color:#fff;
+	background-color: #75cec2;
+	color: #fff;
 }
 
 .slider-section .position li{
+	background-color: #ddd;
 	border-radius: 50%;
-	height:15px;
+	float: left;
+	height: 15px;
+	margin-right: 5px;
 	width: 15px;
-	background-color:#ddd; 
-	
-	float:left;	
-	margin-right:5px;
 }
 
 .slider-section .position li.active{
-	background-color:#75cec2;
+	background-color: #75cec2;
 }
 
 .slider-section ul.position {
-	padding:0;
-	bottom:10px;
+	bottom: 10px;
 	left: 45%;
-	position:absolute;
-	list-style: none; 
+	list-style: none;
+	padding: 0;
+	position: absolute;
 }
 
 .slidecontent{
-	position:relative;
-	height:470px;
+	height: 470px;
 	perspective: 800px;
-	transform-style:preserve-3d;
-
+	position: relative;
+	transform-style: preserve-3d;
 }
 
 .slidecontent .slide{
-	position:absolute;
 	background: #aaa;
-	height:365px;
-	width: 280px;
+	box-shadow: 10px 5px 10px rgba(0,0,0,.4);
+	height: 365px;
 	overflow: hidden;
-	box-shadow:10px 5px 10px rgba(0,0,0,.4);
-	top:5%;	
-	transition:all .5s ease-in-out;
+	position: absolute;
+	top: 5%;
+	transition: all .5s ease-in-out;
+	width: 280px;
 }
 
 .slidecontent .slide>img{
@@ -169,24 +170,125 @@ nav li a{
 
 .slide1{
 	display: block !important;
-	transform:rotateY(-15deg) translate3d(0px,0,-150px);
+	transform: rotateY(-15deg) translate3d(0px,0,-150px);
 	z-index: 2 !important;
 }
 
 .slide2{
 	display: block !important;
-	transform:rotateY(-15deg) translate3d(250px,0,-50px);
+	transform: rotateY(-15deg) translate3d(250px,0,-50px);
 	z-index: 3 !important;
 }
 
 .slide3{
 	display: block !important;
-	transform:rotateY(-15deg) translate3d(500px,0,-150px);
+	transform: rotateY(-15deg) translate3d(500px,0,-150px);
 	z-index: 2 !important;
 }
 
 .hidden-slide{
 	display: block !important;
-	transform:rotateY(-15deg) translate3d(250px,0,-450px);
-	
+	transform: rotateY(-15deg) translate3d(250px,0,-450px);
+}
+
+.service-section{
+	border-bottom: 1px solid #eee;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+.service-section:before{
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-top: 7px solid #eee;
+	bottom: -7px;
+	content:'';
+	display: block;
+	left:50%;
+	position: absolute;
+}
+
+.service-section:after{
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-top: 7px solid #fff;
+	bottom:-5px;
+	content:'';
+	display: block;
+	left:50%;
+	position: absolute;
+}
+
+
+.service-section header.service{
+	color: #999;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 24px;
+	padding: 10px;
+	text-align: center;
+	text-shadow: 0 0 2px rgba(0,0,0,.4);
+}
+
+.service-section div.text{
+	color: #999;
+	line-height: 30px;
+	margin-bottom: 50px;
+	padding: 0 80px;
+	text-align: center;
+	text-shadow: 0 0 2px rgba(0,0,0,.4);
+}
+
+.service-section div.service{
+	display: block;
+	float: left;
+	height: 140px;
+	margin-bottom: 50px;
+	margin-left: 90px;
+	margin-right: 15px;
+	padding: 0;
+	position: relative;
+	text-align: center;
+	width: 120px;
+}
+
+.service-section div.service figure{
+	color: #999;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 0;
+}
+
+div.service .circle{
+	background: #eee;
+	border-radius: 50%;
+	font-size: 20px;
+	height: 95px;
+	line-height: 95px;
+	margin: 12px auto;
+	text-align: center;
+	width: 95px;
+}
+
+.service-section div.service:hover .circle,
+.service-section div.active .circle{
+	background:#75cec2;
+	color:#fff;
+}
+
+.service-section div.service:hover figure,
+.service-section div.active figure{
+	color:#75cec2;
+}
+
+.service-section div.active:after,
+.service-section div.service:hover:after{
+	border-bottom: 5px solid #75cec2;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	content: '';
+	display: block;
+	left: 55px;
+	position: absolute;
+	top: 8px;
 }
