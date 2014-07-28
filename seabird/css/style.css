@@ -8,13 +8,14 @@
 
 body{
 	background: url(../img/body_bg.png);
+	color: #5c5c5c;
 	font-family: "PT Sans", Tahoma, Arial;
 }
 
 .content{
 	background: #fff;
-	border: 1px solid #dbdbdb;
-	margin: 50px auto;
+	margin: 50px auto 0 auto;
+	outline: 1px solid #dbdbdb;
 	width: 1050px;
 }
 
@@ -23,7 +24,6 @@ body{
 }
 
 .logo{
-	color: #5b5b5b;
 	font-size: 30px; 
 	font-weight: bold; 
 	padding: 25px 0; 
@@ -77,7 +77,6 @@ nav li a{
 }
 
 .slider-section header{
-	color: #5c5c5c;
 	font-size: 30px;
 	font-weight: bold;
 	height:95px;
@@ -88,7 +87,6 @@ nav li a{
 }
 
 .slider-section .text{
-	color: #5c5c5c;
 	font-size: 25px;
 	height: 55px;
 	line-height: 55px;
@@ -170,19 +168,19 @@ nav li a{
 
 .slide1{
 	display: block !important;
-	transform: rotateY(-15deg) translate3d(0px,0,-150px);
+	transform: rotateY(-15deg) rotateX(5deg) translate3d(0px,0,-150px);
 	z-index: 2 !important;
 }
 
 .slide2{
 	display: block !important;
-	transform: rotateY(-15deg) translate3d(250px,0,-50px);
+	transform: rotateY(-15deg) rotateX(5deg) translate3d(250px,0,-50px);
 	z-index: 3 !important;
 }
 
 .slide3{
 	display: block !important;
-	transform: rotateY(-15deg) translate3d(500px,0,-150px);
+	transform: rotateY(-15deg) rotateX(5deg) translate3d(500px,0,-150px);
 	z-index: 2 !important;
 }
 
@@ -221,7 +219,6 @@ nav li a{
 
 
 .service-section header.service{
-	color: #999;
 	font-size: 24px;
 	font-weight: bold;
 	line-height: 24px;
@@ -231,7 +228,6 @@ nav li a{
 }
 
 .service-section div.text{
-	color: #999;
 	line-height: 30px;
 	margin-bottom: 50px;
 	padding: 0 80px;
@@ -253,7 +249,6 @@ nav li a{
 }
 
 .service-section div.service figure{
-	color: #999;
 	font-size: 14px;
 	font-weight: bold;
 	margin: 0;
@@ -291,4 +286,124 @@ div.service .circle{
 	left: 55px;
 	position: absolute;
 	top: 8px;
+}
+
+header.portfolio{
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	margin-top: 50px;
+	text-shadow: 0 0 2px rgba(0,0,0,.4);
+	text-transform: uppercase;
+}
+
+.portfolio .work{
+	display: block;
+	float: left;
+	margin-left: 0;
+	margin-right: 22px;
+	padding: 0;
+	width: 302px;
+}
+
+.portfolio .work:last-child{
+	margin-right: 0;
+}
+
+.portfolio .title{
+	font-weight: bold;
+	margin-top: 25px;
+}
+
+.portfolio .link{
+	color:#75cec2;
+	font-size: 15px;
+	margin-bottom: 20px;
+	margin-top: 12px;
+}
+
+.portfolio .description{
+	font-size: 14px;
+	line-height: 25px;
+}
+
+footer{
+	background: #393939;
+	color: #ccc;
+}
+
+.content-down{
+	margin: 25px 50px 0px 50px;
+}
+
+.content-down .info{
+	display: block;
+	float: left;
+	font-size: 14px;
+	line-height: 25px;
+	margin-right: 22px;
+	width: 302px;
+}
+
+.content-down .info p:nth-of-type(2){
+	margin-top:25px;
+}
+
+.content-down .info:last-child{
+	margin-right: 0;
+}
+
+.content-down .info .title{
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 60px;
+	text-transform: uppercase;
+}
+
+.content-down .info ul{
+	list-style: none;
+	margin-top: 25px;
+	padding:0;
+}
+.content-down .info ul>li{
+	font-family: FontAwesome;
+	margin-left: 20px;
+	position:relative;
+}
+
+.content-down .info ul>li.address:before{
+	color:#75cec2;
+	content:"\f041";
+	left:-20px;
+	position: absolute;
+}
+
+.content-down .info ul>li.phone:before{
+	color:#75cec2;
+	content:"\f095";
+	left:-20px;
+	position: absolute;
+}
+
+.content-down .info ul>li.email:before{
+	color:#75cec2;
+	content:"\f0e0";
+	left:-20px;
+	position: absolute;
+}
+
+.content-down .info .post p{
+	margin-bottom: 0px;
+}
+
+.content-down .info .post .date{
+	font-size: 12px;
+	color: #656565;
+}
+
+.copyright{
+	background: #333;
+	color: #ccc;
+	padding: 30px 50px;
+	font-size: 14px
 }
