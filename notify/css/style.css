@@ -1,5 +1,14 @@
+body {
+  margin: 0 auto;
+  width: 1600px;
+}
+.site-header {
+  outline: 1px solid #f00;
+  height: 510px;
+  background: url("../img/bg_header.png") no-repeat 50% -150px;
+}
 .site-header .line {
-  width: 20px;
-  height: 20px;
-  background: #f00;
+  width: 1600px;
+  height: 10px;
+  background: #2ecc71;
 }
