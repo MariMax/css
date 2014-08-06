@@ -1,13 +1,20 @@
+width = 1600px
+header-line-color = #2ecc71
+header-line-height = 11px
+header-height = 500px
+
 body
+	font-family 'PT Sans' Tahoma Arial
 	margin 0 auto
-	width 1600px
+	width width
 
 .site-header
 	outline 1px solid red
-	height 510px
-	background url(../img/bg_header.png) no-repeat 50% -150px
+	height (header-height+header-line-height)
+	background url(../img/bg_header.png) no-repeat 50% -150px, linear-gradient(white, black)
 
 	.line
-		width 1600px
-		height 10px
-		background #2ecc71
+		width width
+		height header-line-height
+		background header-line-color
+		box-shadow 0 0 15px black
