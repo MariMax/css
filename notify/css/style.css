@@ -1,21 +1,18 @@
+@import 'normalize.css';
 body {
   font-family: 'PT Sans' Tahoma Arial;
   margin: 0 auto;
   width: 1600px;
 }
 .site-header {
-  outline: 1px solid #f00;
-  height: 511px;
-  background: url("../img/bg_header.png") no-repeat 50% -150px, -webkit-linear-gradient(#fff, #000);
-  background: url("../img/bg_header.png") no-repeat 50% -150px, -moz-linear-gradient(#fff, #000);
-  background: url("../img/bg_header.png") no-repeat 50% -150px, -o-linear-gradient(#fff, #000);
-  background: url("../img/bg_header.png") no-repeat 50% -150px, -ms-linear-gradient(#fff, #000);
-  background: url("../img/bg_header.png") no-repeat 50% -150px, linear-gradient(#fff, #000);
+  background: url("../img/bg_header.png") no-repeat 50% -150px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  height: 510px;
 }
 .site-header .line {
-  width: 1600px;
-  height: 11px;
   background: #2ecc71;
-  -webkit-box-shadow: 0 0 15px #000;
-  box-shadow: 0 0 15px #000;
+  height: 10px;
+  width: 1600px;
 }

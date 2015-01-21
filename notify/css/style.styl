@@ -1,7 +1,9 @@
 width = 1600px
 header-line-color = #2ecc71
-header-line-height = 11px
+header-line-height = 10px
 header-height = 500px
+
+@import 'normalize.css'
 
 body
 	font-family 'PT Sans' Tahoma Arial
@@ -9,12 +11,11 @@ body
 	width width
 
 .site-header
-	outline 1px solid red
+	background url(../img/bg_header.png) no-repeat 50% -150px
+	background-size cover
 	height (header-height+header-line-height)
-	background url(../img/bg_header.png) no-repeat 50% -150px, linear-gradient(white, black)
 
 	.line
-		width width
-		height header-line-height
 		background header-line-color
-		box-shadow 0 0 15px black
+		height header-line-height
+		width width
